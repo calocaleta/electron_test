@@ -4,12 +4,14 @@
   "description": "Aplicativo de electron de prueba",
   "main": "index.js",
   "scripts": {
+    "start": "electron-packager .",
     "dev": "electron index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^21.1.1"
+    "electron": "^21.1.1",
+    "electron-packager": "^16.0.0"
   }
 }
