@@ -2,6 +2,12 @@
 
 const { app, BrowserWindow } = require('electron')
 
+const { devtools } = require('./devtools')
+
+if(process.env.NODE_ENV === 'development'){
+    devtools
+}
+
 //console.dir(app)
 
 app.on('before-quit', () => {
